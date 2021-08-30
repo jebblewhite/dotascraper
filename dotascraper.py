@@ -7,6 +7,7 @@ class DotaScraper:
     def __init__(self,outfile='dotadata.json'):
         self.driver = webdriver.Chrome()
         self.matches = []
+        self.match_ids = []
         self.outfile = outfile
 
     def get_matches(self, initial=True):
@@ -24,6 +25,14 @@ class DotaScraper:
     def get_match(self,match_id):
         self.driver.get(self.BASE_URL+match_id)
         sleep(2)
+        header = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]')
+        header_list = header.text.split('\n')
+        print(header_list)
+        if header_list[2] == 'CAPTAINS MODE':
+            radiant_pickbans = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div[1]/div[3]/div')
+            dire_pickbans = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div[1]/div[6]/div')
+            print(radiant_pickbans.text)
+
 
     def create_match_ids(self):
         with open('match_ids.json','w+') as file:
@@ -37,7 +46,9 @@ class DotaScraper:
             json.dump(self.match_ids, file, indent = 4)
 
     def read_match_ids(self):
-        pass
+        with open('match_ids.json','r+') as file:
+            file_data = json.load(file)
+            [self.match_ids.append(x) for x in file_data if x not in self.match_ids]
 
     def create_json(self):
         with open(self.outfile,'w+') as file:
