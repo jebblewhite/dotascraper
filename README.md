@@ -10,6 +10,7 @@ match_ids.json contains match ids for scraping
 
 scrapertest.py is a test sraping object
 
+dotadata.json is the final output, ready to be analysed
 
 
 
