@@ -33,9 +33,13 @@ class DotaScraper:
 
     def get_match(self,match_id):
         self.driver.get(self.BASE_URL+match_id)
-        sleep(4)
-        # find the winner of the match from the header
-        header = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]')
+        try:
+            sleep(1)
+            # find the winner of the match from the header
+            header = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]')
+        except:
+            sleep(5)
+            header = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]')
         header_list = header.text.split('\n')
         winner_name = header_list[0].replace(' Victory', '')
         # only looking at captains mode games
