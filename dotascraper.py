@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
 import json
 
@@ -13,8 +14,7 @@ class DotaScraper:
     def get_matches(self, initial=True):
         if initial:
             self.driver.get(self.BASE_URL)
-            sleep(2)
-            matches_container = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div/div/div/div/table/tbody')
+            matches_container = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div/div/div/div/table/tbody'))
             matches_full = matches_container.find_elements_by_xpath('./tr')
             self.match_ids = [match.text.split('\n')[0] for match in matches_full]
             try:
@@ -33,13 +33,7 @@ class DotaScraper:
 
     def get_match(self,match_id):
         self.driver.get(self.BASE_URL+match_id)
-        try:
-            sleep(1)
-            # find the winner of the match from the header
-            header = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]')
-        except:
-            sleep(5)
-            header = self.driver.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]')
+        header = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]'))
         header_list = header.text.split('\n')
         winner_name = header_list[0].replace(' Victory', '')
         # only looking at captains mode games
