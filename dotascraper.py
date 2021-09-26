@@ -6,34 +6,55 @@ import json
 class DotaScraper:
     BASE_URL = "https://www.opendota.com/matches/"
     def __init__(self,outfile='dotadata.json'):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome('./chromedriver')
         self.matches = []
         self.match_ids = []
         self.outfile = outfile
+        
+    def quitout(self):
+        self.driver.quit()
 
-    def get_matches(self, initial=True):
-        if initial:
-            self.driver.get(self.BASE_URL)
-            matches_container = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div/div/div/div/table/tbody'))
-            matches_full = matches_container.find_elements_by_xpath('./tr')
-            self.match_ids = [match.text.split('\n')[0] for match in matches_full]
-            try:
-                self.dump_match_ids()
-            except:
-                self.create_match_ids()
+    def get_match_ids(self):
+        self.driver.get(self.BASE_URL)
+        matches_container = WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div/div/div/div/table/tbody'))
+        matches_full = matches_container.find_elements_by_xpath('./tr')
+        self.match_ids = [match.text.split('\n')[0] for match in matches_full]
+        try:
+            self.dump_match_ids()
+        except:
+            self.create_match_ids()
 
-        else:
-            self.read_match_ids()
-            for match in self.match_ids:
+    def get_matches(self):
+        self.read_match_ids()
+        self.counter = 0
+        self.read_json()
+        parsed_matches = self.parsed_ids_list()
+        for match in self.match_ids:
+            if self._check_if_not_parsed(match, parsed_matches):
                 self.get_match(match)
-            try:
-                self.write_json()
-            except:
-                self.create_json()
+                self.counter += 1
+            if self.counter >= 100:
+                break
+        try:
+            self.write_json()
+        except:
+            self.create_json()
+
+    def parsed_ids_list(self):
+        x = []
+        [x.append(match["match_id"]) for match in self.matches if match["match_id"] in self.match_ids]
+        return x
+
+    def _check_if_not_parsed(self, match, parsed_ids):
+        if match in parsed_ids:
+            return False
+        else:
+            return True
+
 
     def get_match(self,match_id):
         self.driver.get(self.BASE_URL+match_id)
-        header = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]'))
+        header = WebDriverWait(self.driver, 30).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]'))
         header_list = header.text.split('\n')
         winner_name = header_list[0].replace(' Victory', '')
         # only looking at captains mode games
@@ -57,23 +78,23 @@ class DotaScraper:
             dire_picks = []
             bans = []
 
-            for pickbans in radiant_pickbans:
-                pickorban = pickbans.find_element_by_xpath('./img').get_attribute('src').replace('https://steamcdn-a.akamaihd.net/apps/dota2/images/heroes/', '').replace('_sb.png', '')
-                if "BAN" in pickbans.text:
-                    bans.append(pickorban)
-                else:
-                    radiant_picks.append(pickorban)
+            radiant_picks, bans = self._picks_and_bans(radiant_picks, bans, radiant_pickbans)
+            dire_picks, bans = self._picks_and_bans(dire_picks, bans, dire_pickbans)
 
-            for pickbans in dire_pickbans:
-                pickorban = pickbans.find_element_by_xpath('./img').get_attribute('src').replace('https://steamcdn-a.akamaihd.net/apps/dota2/images/heroes/', '').replace('_sb.png', '')
-                if "BAN" in pickbans.text:
-                    bans.append(pickorban)
-                else:
-                    dire_picks.append(pickorban)
             match_dict_item['radiant_picks'] = radiant_picks
             match_dict_item['dire_picks'] = dire_picks
             match_dict_item['bans'] = bans
             self.matches.append(match_dict_item)
+    
+    @staticmethod
+    def _picks_and_bans(picks,bans,pickbans):
+        for pickban in pickbans:
+                pickorban = pickban.find_element_by_xpath('./img').get_attribute('src').replace('https://steamcdn-a.akamaihd.net/apps/dota2/images/heroes/', '').replace('_sb.png', '')
+                if "BAN" in pickban.text:
+                    bans.append(pickorban)
+                else:
+                    picks.append(pickorban)
+        return picks, bans
         
 
     def create_match_ids(self):
@@ -104,7 +125,12 @@ class DotaScraper:
             matchdict = {'matches':self.matches}
             file.seek(0)
             json.dump(matchdict, file, indent = 4)
+    
+    def read_json(self):
+        with open(self.outfile,'r+') as file:
+            file_data = json.load(file)
+            [self.matches.append(x) for x in file_data["matches"] if x not in self.matches]
 
 if __name__ == '__main__':
     d2scraper = DotaScraper()
-    d2scraper.get_matches()
+    d2scraper.get_match_ids()
