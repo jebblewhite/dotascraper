@@ -47769,6 +47769,74 @@
                 "puck",
                 "ember_spirit"
             ]
+        },
+        {
+            "match_id": "6204077750",
+            "winner": "dire",
+            "radiant_picks": [
+                "disruptor",
+                "mars",
+                "dark_willow",
+                "invoker",
+                "juggernaut"
+            ],
+            "dire_picks": [
+                "weaver",
+                "luna",
+                "abaddon",
+                "lina",
+                "abyssal_underlord"
+            ],
+            "bans": [
+                "beastmaster",
+                "tinker",
+                "axe",
+                "tiny",
+                "lycan",
+                "sand_king",
+                "vengefulspirit",
+                "night_stalker",
+                "monkey_king",
+                "medusa",
+                "shadow_demon",
+                "naga_siren",
+                "faceless_void",
+                "terrorblade"
+            ]
+        },
+        {
+            "match_id": "6204056630",
+            "winner": "radiant",
+            "radiant_picks": [
+                "mars",
+                "faceless_void",
+                "ancient_apparition",
+                "hoodwink",
+                "leshrac"
+            ],
+            "dire_picks": [
+                "weaver",
+                "tiny",
+                "mirana",
+                "dragon_knight",
+                "naga_siren"
+            ],
+            "bans": [
+                "wisp",
+                "enchantress",
+                "skeleton_king",
+                "beastmaster",
+                "lina",
+                "ember_spirit",
+                "templar_assassin",
+                "death_prophet",
+                "viper",
+                "phoenix",
+                "spirit_breaker",
+                "abaddon",
+                "queenofpain",
+                "invoker"
+            ]
         }
     ]
 }

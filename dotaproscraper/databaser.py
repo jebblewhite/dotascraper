@@ -1,17 +1,17 @@
 import json
 import pandas as pd
 from sqlalchemy import create_engine
+from operator import itemgetter
 
 class Databaser:
     DATABASE_TYPE = 'postgresql'
     DBAPI = 'psycopg2'
-    ENDPOINT = 'dotabase.cs34sazcdjts.eu-west-1.rds.amazonaws.com'
-    USER = 'postgres'
-    PASSWORD = 'dawnbreaker21'
     PORT = 5432
     DATABASE = 'postgres'
     def __init__(self, infile="dotaproscraper/dotadata.json"):
         file_data = self.load_file(infile)
+        d = self.load_file('dotaproscraper/db_credentials.json')
+        self.ENDPOINT, self.USER, self.PASSWORD = itemgetter('ENDPOINT', 'USER', 'PASSWORD')(d)
         self.matches = file_data["matches"]
         self.create_hero_columns()
         self.create_dataframe()
