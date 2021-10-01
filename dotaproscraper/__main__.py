@@ -1,5 +1,5 @@
-from dotascraper import DotaScraper
-from databaser import Databaser
+from .dotascraper import DotaScraper
+from .databaser import Databaser
 
 if __name__ == "__main__":
     d2scraper = DotaScraper()

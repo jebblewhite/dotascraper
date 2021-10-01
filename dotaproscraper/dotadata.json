@@ -47633,6 +47633,142 @@
                 "phantom_lancer",
                 "antimage"
             ]
+        },
+        {
+            "match_id": "6204042601",
+            "winner": "dire",
+            "radiant_picks": [
+                "tiny",
+                "monkey_king",
+                "night_stalker",
+                "leshrac",
+                "obsidian_destroyer"
+            ],
+            "dire_picks": [
+                "tidehunter",
+                "pangolier",
+                "lion",
+                "troll_warlord",
+                "batrider"
+            ],
+            "bans": [
+                "magnataur",
+                "bloodseeker",
+                "gyrocopter",
+                "storm_spirit",
+                "invoker",
+                "lina",
+                "death_prophet",
+                "weaver",
+                "spirit_breaker",
+                "dark_seer",
+                "viper",
+                "earth_spirit",
+                "razor",
+                "juggernaut"
+            ]
+        },
+        {
+            "match_id": "6204007066",
+            "winner": "dire",
+            "radiant_picks": [
+                "mars",
+                "elder_titan",
+                "disruptor",
+                "medusa",
+                "night_stalker"
+            ],
+            "dire_picks": [
+                "wisp",
+                "gyrocopter",
+                "mirana",
+                "ember_spirit",
+                "dragon_knight"
+            ],
+            "bans": [
+                "weaver",
+                "enchantress",
+                "lina",
+                "dark_seer",
+                "batrider",
+                "sand_king",
+                "brewmaster",
+                "death_prophet",
+                "viper",
+                "faceless_void",
+                "razor",
+                "morphling",
+                "puck",
+                "invoker"
+            ]
+        },
+        {
+            "match_id": "6204004751",
+            "winner": "dire",
+            "radiant_picks": [
+                "shadow_demon",
+                "axe",
+                "puck",
+                "skywrath_mage",
+                "phantom_assassin"
+            ],
+            "dire_picks": [
+                "weaver",
+                "mars",
+                "treant",
+                "spectre",
+                "batrider"
+            ],
+            "bans": [
+                "tiny",
+                "night_stalker",
+                "ursa",
+                "monkey_king",
+                "medusa",
+                "kunkka",
+                "ember_spirit",
+                "beastmaster",
+                "tinker",
+                "luna",
+                "lina",
+                "bloodseeker",
+                "terrorblade",
+                "life_stealer"
+            ]
+        },
+        {
+            "match_id": "6203992495",
+            "winner": "dire",
+            "radiant_picks": [
+                "monkey_king",
+                "earth_spirit",
+                "furion",
+                "silencer",
+                "pangolier"
+            ],
+            "dire_picks": [
+                "gyrocopter",
+                "tiny",
+                "mirana",
+                "mars",
+                "storm_spirit"
+            ],
+            "bans": [
+                "magnataur",
+                "bloodseeker",
+                "oracle",
+                "invoker",
+                "beastmaster",
+                "lina",
+                "batrider",
+                "weaver",
+                "spirit_breaker",
+                "dark_seer",
+                "viper",
+                "life_stealer",
+                "puck",
+                "ember_spirit"
+            ]
         }
     ]
 }

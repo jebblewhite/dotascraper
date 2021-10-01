@@ -10,13 +10,15 @@ class Databaser:
     PASSWORD = 'dawnbreaker21'
     PORT = 5432
     DATABASE = 'postgres'
-    def __init__(self, infile="dotadata.json"):
+    def __init__(self, infile="dotaproscraper/dotadata.json"):
         file_data = self.load_file(infile)
         self.matches = file_data["matches"]
         self.create_hero_columns()
         self.create_dataframe()
+        self.engine = create_engine(f"{self.DATABASE_TYPE}+{self.DBAPI}://{self.USER}:{self.PASSWORD}@{self.ENDPOINT}:{self.PORT}/{self.DATABASE}")
+        self.engine.connect()
 
-    def load_file(self, infile):
+    def load_file(self, infile: str) -> dict:
         with open(infile,'r+') as file:
             return json.load(file)
 
@@ -50,8 +52,6 @@ class Databaser:
         self.df = self.df.transpose()
 
     def push_to_db(self, df: pd.DataFrame, db_name: str):
-        self.engine = create_engine(f"{self.DATABASE_TYPE}+{self.DBAPI}://{self.USER}:{self.PASSWORD}@{self.ENDPOINT}:{self.PORT}/{self.DATABASE}")
-        self.engine.connect()
         df.to_sql(db_name, self.engine, if_exists='replace')
 
     def analyse_rates(self):

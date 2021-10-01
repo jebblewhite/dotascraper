@@ -4,8 +4,8 @@ import json
 
 class DotaScraper:
     BASE_URL = "https://www.opendota.com/matches/"
-    def __init__(self,outfile='dotadata.json'):
-        self.driver = webdriver.Chrome('./chromedriver')
+    def __init__(self, outfile: str='dotaproscraper/dotadata.json'):
+        self.driver = webdriver.Chrome('dotaproscraper/chromedriver')
         self.matches = []
         self.match_ids = []
         self.outfile = outfile
@@ -40,19 +40,19 @@ class DotaScraper:
         except:
             self.create_json()
 
-    def parsed_ids_list(self):
+    def parsed_ids_list(self) -> list:
         x = []
         [x.append(match["match_id"]) for match in self.matches if match["match_id"] in self.match_ids]
         return x
 
-    def _check_if_not_parsed(self, match, parsed_ids):
+    def _check_if_not_parsed(self, match: str, parsed_ids: list) -> bool:
         if match in parsed_ids:
             return False
         else:
             return True
 
 
-    def get_match(self,match_id):
+    def get_match(self, match_id: str):
         self.driver.get(self.BASE_URL+match_id)
         header = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]'))
         header_list = header.text.split('\n')
@@ -87,7 +87,7 @@ class DotaScraper:
             self.matches.append(match_dict_item)
     
     @staticmethod
-    def _picks_and_bans(picks,bans,pickbans):
+    def _picks_and_bans(picks: list, bans: list, pickbans: list) -> list:
         for pickban in pickbans:
                 pickorban = pickban.find_element_by_xpath('./img').get_attribute('src').replace('https://steamcdn-a.akamaihd.net/apps/dota2/images/heroes/', '').replace('_sb.png', '')
                 if "BAN" in pickban.text:
@@ -98,18 +98,18 @@ class DotaScraper:
         
 
     def create_match_ids(self):
-        with open('match_ids.json','w+') as file:
+        with open('dotaproscraper/match_ids.json','w+') as file:
             json.dump(self.match_ids, file, indent = 4)
 
     def dump_match_ids(self):
-        with open('match_ids.json','r+') as file:
+        with open('dotaproscraper/match_ids.json','r+') as file:
             file_data = json.load(file)
             [self.match_ids.append(x) for x in file_data if x not in self.match_ids]
             file.seek(0)
             json.dump(self.match_ids, file, indent = 4)
 
     def read_match_ids(self):
-        with open('match_ids.json','r+') as file:
+        with open('dotaproscraper/match_ids.json','r+') as file:
             file_data = json.load(file)
             [self.match_ids.append(x) for x in file_data if x not in self.match_ids]
 
