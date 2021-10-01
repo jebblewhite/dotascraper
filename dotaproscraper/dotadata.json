@@ -46308,6 +46308,1331 @@
                 "puck",
                 "batrider"
             ]
+        },
+        {
+            "match_id": "6203933067",
+            "winner": "dire",
+            "radiant_picks": [
+                "tiny",
+                "lina",
+                "shadow_demon",
+                "pangolier",
+                "snapfire"
+            ],
+            "dire_picks": [
+                "mars",
+                "death_prophet",
+                "spirit_breaker",
+                "faceless_void",
+                "queenofpain"
+            ],
+            "bans": [
+                "vengefulspirit",
+                "viper",
+                "phoenix",
+                "terrorblade",
+                "invoker",
+                "storm_spirit",
+                "batrider",
+                "enchantress",
+                "weaver",
+                "dark_seer",
+                "monkey_king",
+                "beastmaster",
+                "skeleton_king",
+                "riki"
+            ]
+        },
+        {
+            "match_id": "6203923637",
+            "winner": "dire",
+            "radiant_picks": [
+                "tiny",
+                "silencer",
+                "venomancer",
+                "rattletrap",
+                "storm_spirit"
+            ],
+            "dire_picks": [
+                "bane",
+                "lina",
+                "axe",
+                "life_stealer",
+                "ember_spirit"
+            ],
+            "bans": [
+                "beastmaster",
+                "mars",
+                "medusa",
+                "terrorblade",
+                "tinker",
+                "dark_willow",
+                "puck",
+                "night_stalker",
+                "shadow_demon",
+                "invoker",
+                "queenofpain",
+                "monkey_king",
+                "morphling",
+                "ursa"
+            ]
+        },
+        {
+            "match_id": "6203850854",
+            "winner": "dire",
+            "radiant_picks": [
+                "bloodseeker",
+                "pangolier",
+                "rubick",
+                "elder_titan",
+                "magnataur"
+            ],
+            "dire_picks": [
+                "lycan",
+                "shadow_demon",
+                "abaddon",
+                "faceless_void",
+                "ember_spirit"
+            ],
+            "bans": [
+                "tiny",
+                "silencer",
+                "earthshaker",
+                "batrider",
+                "life_stealer",
+                "invoker",
+                "queenofpain",
+                "monkey_king",
+                "hoodwink",
+                "disruptor",
+                "lina",
+                "templar_assassin",
+                "phantom_lancer",
+                "storm_spirit"
+            ]
+        },
+        {
+            "match_id": "6203833938",
+            "winner": "radiant",
+            "radiant_picks": [
+                "bloodseeker",
+                "pangolier",
+                "elder_titan",
+                "rubick",
+                "magnataur"
+            ],
+            "dire_picks": [
+                "lycan",
+                "shadow_demon",
+                "abaddon",
+                "faceless_void",
+                "ember_spirit"
+            ],
+            "bans": [
+                "silencer",
+                "tiny",
+                "earthshaker",
+                "life_stealer",
+                "batrider",
+                "invoker",
+                "queenofpain",
+                "monkey_king",
+                "hoodwink",
+                "disruptor",
+                "lina",
+                "templar_assassin",
+                "phantom_lancer",
+                "storm_spirit"
+            ]
+        },
+        {
+            "match_id": "6203790686",
+            "winner": "dire",
+            "radiant_picks": [
+                "ogre_magi",
+                "tidehunter",
+                "dazzle",
+                "ursa",
+                "dragon_knight"
+            ],
+            "dire_picks": [
+                "bloodseeker",
+                "lycan",
+                "earthshaker",
+                "lina",
+                "phantom_assassin"
+            ],
+            "bans": [
+                "silencer",
+                "tiny",
+                "razor",
+                "slark",
+                "life_stealer",
+                "spectre",
+                "terrorblade",
+                "monkey_king",
+                "hoodwink",
+                "gyrocopter",
+                "sven",
+                "disruptor",
+                "invoker",
+                "storm_spirit"
+            ]
+        },
+        {
+            "match_id": "6203647213",
+            "winner": "dire",
+            "radiant_picks": [
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "lich",
+                "snapfire",
+                "obsidian_destroyer",
+                "bloodseeker"
+            ],
+            "dire_picks": [
+                "enigma",
+                "mars",
+                "gyrocopter",
+                "shredder",
+                "sniper"
+            ],
+            "bans": [
+                "silencer",
+                "tiny",
+                "monkey_king",
+                "ursa",
+                "weaver",
+                "queenofpain",
+                "puck",
+                "lina",
+                "night_stalker",
+                "nyx_assassin",
+                "pangolier",
+                "troll_warlord",
+                "antimage",
+                "faceless_void"
+            ]
+        },
+        {
+            "match_id": "6203604348",
+            "winner": "radiant",
+            "radiant_picks": [
+                "lina",
+                "shredder",
+                "shadow_demon",
+                "pangolier",
+                "life_stealer"
+            ],
+            "dire_picks": [
+                "tiny",
+                "mars",
+                "grimstroke",
+                "dark_willow",
+                "weaver"
+            ],
+            "bans": [
+                "silencer",
+                "enigma",
+                "batrider",
+                "invoker",
+                "bloodseeker",
+                "spectre",
+                "slark",
+                "night_stalker",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "gyrocopter",
+                "terrorblade",
+                "viper",
+                "troll_warlord",
+                "faceless_void"
+            ]
+        },
+        {
+            "match_id": "6203561989",
+            "winner": "radiant",
+            "radiant_picks": [
+                "tiny",
+                "enigma",
+                "queenofpain",
+                "silencer",
+                "doom_bringer"
+            ],
+            "dire_picks": [
+                "monkey_king",
+                "ancient_apparition",
+                "viper",
+                "spirit_breaker",
+                "skeleton_king"
+            ],
+            "bans": [
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "night_stalker",
+                "nyx_assassin",
+                "lina",
+                "mars",
+                "gyrocopter",
+                "phantom_lancer",
+                "batrider",
+                "beastmaster",
+                "invoker",
+                "tinker",
+                "oracle",
+                "shredder",
+                "bloodseeker"
+            ]
+        },
+        {
+            "match_id": "6203466626",
+            "winner": "dire",
+            "radiant_picks": [
+                "gyrocopter",
+                "faceless_void",
+                "shredder",
+                "snapfire",
+                "vengefulspirit"
+            ],
+            "dire_picks": [
+                "naga_siren",
+                "beastmaster",
+                "disruptor",
+                "batrider",
+                "silencer"
+            ],
+            "bans": [
+                "treant",
+                "sven",
+                "phantom_lancer",
+                "hoodwink",
+                "oracle",
+                "razor",
+                "phantom_assassin",
+                "warlock",
+                "windrunner",
+                "storm_spirit",
+                "visage",
+                "winter_wyvern",
+                "zuus",
+                "ogre_magi"
+            ]
+        },
+        {
+            "match_id": "6203446725",
+            "winner": "dire",
+            "radiant_picks": [
+                "snapfire",
+                "faceless_void",
+                "vengefulspirit",
+                "shredder",
+                "gyrocopter"
+            ],
+            "dire_picks": [
+                "disruptor",
+                "naga_siren",
+                "beastmaster",
+                "silencer",
+                "batrider"
+            ],
+            "bans": [
+                "earth_spirit",
+                "nyx_assassin",
+                "invoker",
+                "rubick",
+                "death_prophet",
+                "obsidian_destroyer",
+                "queenofpain",
+                "night_stalker",
+                "lina",
+                "tinker",
+                "tiny",
+                "sand_king",
+                "winter_wyvern",
+                "techies"
+            ]
+        },
+        {
+            "match_id": "6203434138",
+            "winner": "radiant",
+            "radiant_picks": [
+                "weaver",
+                "rubick",
+                "spectre",
+                "disruptor",
+                "void_spirit"
+            ],
+            "dire_picks": [
+                "lion",
+                "night_stalker",
+                "earthshaker",
+                "sven",
+                "storm_spirit"
+            ],
+            "bans": [
+                "leshrac",
+                "tiny",
+                "luna",
+                "faceless_void",
+                "batrider",
+                "death_prophet",
+                "kunkka",
+                "templar_assassin",
+                "viper",
+                "monkey_king",
+                "naga_siren",
+                "ember_spirit",
+                "enigma",
+                "puck"
+            ]
+        },
+        {
+            "match_id": "6203395260",
+            "winner": "dire",
+            "radiant_picks": [
+                "silencer",
+                "monkey_king",
+                "pudge",
+                "void_spirit",
+                "terrorblade"
+            ],
+            "dire_picks": [
+                "medusa",
+                "abaddon",
+                "lion",
+                "slardar",
+                "mars"
+            ],
+            "bans": [
+                "beastmaster",
+                "lina",
+                "slark",
+                "visage",
+                "lone_druid",
+                "batrider",
+                "ember_spirit",
+                "nyx_assassin",
+                "night_stalker",
+                "phantom_lancer",
+                "antimage",
+                "tiny",
+                "razor",
+                "morphling"
+            ]
+        },
+        {
+            "match_id": "6203393481",
+            "winner": "radiant",
+            "radiant_picks": [
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "beastmaster",
+                "disruptor",
+                "naga_siren",
+                "invoker"
+            ],
+            "dire_picks": [
+                "lina",
+                "spirit_breaker",
+                "bloodseeker",
+                "witch_doctor",
+                "venomancer"
+            ],
+            "bans": [
+                "night_stalker",
+                "batrider",
+                "monkey_king",
+                "silencer",
+                "jakiro",
+                "tinker",
+                "shredder",
+                "earth_spirit",
+                "abaddon",
+                "juggernaut",
+                "slark",
+                "phantom_lancer",
+                "storm_spirit",
+                "windrunner"
+            ]
+        },
+        {
+            "match_id": "6203363838",
+            "winner": "radiant",
+            "radiant_picks": [
+                "invoker",
+                "tiny",
+                "bane",
+                "earthshaker",
+                "shadow_demon"
+            ],
+            "dire_picks": [
+                "lina",
+                "ogre_magi",
+                "luna",
+                "pangolier",
+                "sand_king"
+            ],
+            "bans": [
+                "beastmaster",
+                "lycan",
+                "medusa",
+                "morphling",
+                "monkey_king",
+                "void_spirit",
+                "queenofpain",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "mars",
+                "techies",
+                "faceless_void",
+                "sven",
+                "viper",
+                "sniper"
+            ]
+        },
+        {
+            "match_id": "6203359815",
+            "winner": "radiant",
+            "radiant_picks": [
+                "visage",
+                "pangolier",
+                "ember_spirit",
+                "undying",
+                "sven"
+            ],
+            "dire_picks": [
+                "jakiro",
+                "vengefulspirit",
+                "grimstroke",
+                "storm_spirit",
+                "luna"
+            ],
+            "bans": [
+                "silencer",
+                "tiny",
+                "batrider",
+                "weaver",
+                "lycan",
+                "shadow_demon",
+                "ursa",
+                "beastmaster",
+                "lina",
+                "medusa",
+                "slark",
+                "wisp",
+                "gyrocopter",
+                "antimage"
+            ]
+        },
+        {
+            "match_id": "6203327345",
+            "winner": "dire",
+            "radiant_picks": [
+                "spirit_breaker",
+                "silencer",
+                "shadow_demon",
+                "tiny",
+                "storm_spirit"
+            ],
+            "dire_picks": [
+                "grimstroke",
+                "bloodseeker",
+                "lion",
+                "phantom_lancer",
+                "tinker"
+            ],
+            "bans": [
+                "lina",
+                "sand_king",
+                "brewmaster",
+                "windrunner",
+                "batrider",
+                "invoker",
+                "snapfire",
+                "beastmaster",
+                "earth_spirit",
+                "sven",
+                "naga_siren",
+                "dark_willow",
+                "leshrac",
+                "puck"
+            ]
+        },
+        {
+            "match_id": "6203307990",
+            "winner": "radiant",
+            "radiant_picks": [
+                "silencer",
+                "undying",
+                "slardar",
+                "ember_spirit",
+                "ursa"
+            ],
+            "dire_picks": [
+                "pudge",
+                "nyx_assassin",
+                "jakiro",
+                "morphling",
+                "mars"
+            ],
+            "bans": [
+                "lina",
+                "beastmaster",
+                "visage",
+                "lone_druid",
+                "medusa",
+                "earthshaker",
+                "sand_king",
+                "night_stalker",
+                "tiny",
+                "batrider",
+                "necrolyte",
+                "lycan",
+                "antimage",
+                "slark"
+            ]
+        },
+        {
+            "match_id": "6203299221",
+            "winner": "dire",
+            "radiant_picks": [
+                "lina",
+                "ogre_magi",
+                "monkey_king",
+                "tidehunter",
+                "weaver"
+            ],
+            "dire_picks": [
+                "tiny",
+                "invoker",
+                "bane",
+                "viper",
+                "faceless_void"
+            ],
+            "bans": [
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "mars",
+                "techies",
+                "pangolier",
+                "sven",
+                "ursa",
+                "sniper",
+                "beastmaster",
+                "lycan",
+                "medusa",
+                "venomancer",
+                "morphling",
+                "juggernaut",
+                "phantom_lancer"
+            ]
+        },
+        {
+            "match_id": "6203260663",
+            "winner": "radiant",
+            "radiant_picks": [
+                "grimstroke",
+                "bloodseeker",
+                "lion",
+                "terrorblade",
+                "batrider"
+            ],
+            "dire_picks": [
+                "earth_spirit",
+                "death_prophet",
+                "disruptor",
+                "venomancer",
+                "troll_warlord"
+            ],
+            "bans": [
+                "beastmaster",
+                "night_stalker",
+                "oracle",
+                "naga_siren",
+                "gyrocopter",
+                "phantom_lancer",
+                "sven",
+                "lina",
+                "tinker",
+                "brewmaster",
+                "sniper",
+                "sand_king",
+                "legion_commander",
+                "windrunner"
+            ]
+        },
+        {
+            "match_id": "6203248659",
+            "winner": "radiant",
+            "radiant_picks": [
+                "lina",
+                "beastmaster",
+                "medusa",
+                "abaddon",
+                "lion"
+            ],
+            "dire_picks": [
+                "monkey_king",
+                "brewmaster",
+                "windrunner",
+                "gyrocopter",
+                "grimstroke"
+            ],
+            "bans": [
+                "tinker",
+                "tiny",
+                "nyx_assassin",
+                "enchantress",
+                "phantom_lancer",
+                "wisp",
+                "undying",
+                "visage",
+                "night_stalker",
+                "slark",
+                "bane",
+                "kunkka",
+                "invoker",
+                "storm_spirit"
+            ]
+        },
+        {
+            "match_id": "6203223243",
+            "winner": "dire",
+            "radiant_picks": [
+                "sand_king",
+                "elder_titan",
+                "tiny",
+                "gyrocopter",
+                "queenofpain"
+            ],
+            "dire_picks": [
+                "lina",
+                "ogre_magi",
+                "monkey_king",
+                "venomancer",
+                "juggernaut"
+            ],
+            "bans": [
+                "beastmaster",
+                "lycan",
+                "medusa",
+                "sven",
+                "life_stealer",
+                "sniper",
+                "faceless_void",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "mars",
+                "techies",
+                "furion",
+                "ember_spirit",
+                "invoker",
+                "storm_spirit"
+            ]
+        },
+        {
+            "match_id": "6203184773",
+            "winner": "radiant",
+            "radiant_picks": [
+                "night_stalker",
+                "lina",
+                "dark_willow",
+                "pudge",
+                "rattletrap"
+            ],
+            "dire_picks": [
+                "hoodwink",
+                "tiny",
+                "monkey_king",
+                "tinker",
+                "vengefulspirit"
+            ],
+            "bans": [
+                "skywrath_mage",
+                "lycan",
+                "brewmaster",
+                "beastmaster",
+                "necrolyte",
+                "silencer",
+                "ancient_apparition",
+                "visage",
+                "lone_druid",
+                "bane",
+                "kunkka",
+                "alchemist",
+                "zuus",
+                "morphling"
+            ]
+        },
+        {
+            "match_id": "6203174624",
+            "winner": "radiant",
+            "radiant_picks": [
+                "night_stalker",
+                "sven",
+                "omniknight",
+                "lina",
+                "windrunner"
+            ],
+            "dire_picks": [
+                "disruptor",
+                "lycan",
+                "life_stealer",
+                "skywrath_mage",
+                "shredder"
+            ],
+            "bans": [
+                "silencer",
+                "spirit_breaker",
+                "shadow_demon",
+                "medusa",
+                "earth_spirit",
+                "invoker",
+                "void_spirit",
+                "keeper_of_the_light",
+                "grimstroke",
+                "monkey_king",
+                "pangolier",
+                "undying",
+                "mars"
+            ]
+        },
+        {
+            "match_id": "6203107011",
+            "winner": "radiant",
+            "radiant_picks": [
+                "tiny",
+                "hoodwink",
+                "windrunner",
+                "lycan",
+                "silencer"
+            ],
+            "dire_picks": [
+                "lina",
+                "alchemist",
+                "bane",
+                "kunkka",
+                "night_stalker"
+            ],
+            "bans": [
+                "visage",
+                "lone_druid",
+                "bloodseeker",
+                "beastmaster",
+                "bristleback",
+                "monkey_king",
+                "sven",
+                "necrolyte",
+                "tinker",
+                "shadow_demon",
+                "faceless_void",
+                "ancient_apparition",
+                "grimstroke",
+                "batrider"
+            ]
+        },
+        {
+            "match_id": "6203069967",
+            "winner": "radiant",
+            "radiant_picks": [
+                "mars",
+                "batrider",
+                "lion",
+                "shadow_demon",
+                "life_stealer"
+            ],
+            "dire_picks": [
+                "monkey_king",
+                "hoodwink",
+                "puck",
+                "tidehunter",
+                "faceless_void"
+            ],
+            "bans": [
+                "sand_king",
+                "beastmaster",
+                "queenofpain",
+                "invoker",
+                "lina",
+                "slark",
+                "skeleton_king",
+                "pangolier",
+                "weaver",
+                "medusa",
+                "sven",
+                "bane",
+                "ursa",
+                "morphling"
+            ]
+        },
+        {
+            "match_id": "6203069510",
+            "winner": "radiant",
+            "radiant_picks": [
+                "bloodseeker",
+                "enchantress",
+                "lion",
+                "medusa",
+                "void_spirit"
+            ],
+            "dire_picks": [
+                "elder_titan",
+                "morphling",
+                "rubick",
+                "brewmaster",
+                "lina"
+            ],
+            "bans": [
+                "tiny",
+                "batrider",
+                "mars",
+                "sand_king",
+                "dark_willow",
+                "ember_spirit",
+                "invoker",
+                "weaver",
+                "monkey_king",
+                "phantom_lancer",
+                "ancient_apparition",
+                "bane",
+                "storm_spirit",
+                "tinker"
+            ]
+        },
+        {
+            "match_id": "6203063572",
+            "winner": "dire",
+            "radiant_picks": [
+                "silencer",
+                "spirit_breaker",
+                "razor",
+                "winter_wyvern",
+                "pudge"
+            ],
+            "dire_picks": [
+                "gyrocopter",
+                "templar_assassin",
+                "faceless_void",
+                "techies",
+                "slardar"
+            ],
+            "bans": [
+                "grimstroke",
+                "beastmaster",
+                "monkey_king",
+                "sand_king",
+                "visage",
+                "magnataur",
+                "brewmaster",
+                "earth_spirit",
+                "night_stalker",
+                "batrider",
+                "tiny",
+                "shadow_demon",
+                "medusa",
+                "naga_siren"
+            ]
+        },
+        {
+            "match_id": "6202987640",
+            "winner": "dire",
+            "radiant_picks": [
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "mars",
+                "omniknight",
+                "monkey_king",
+                "windrunner"
+            ],
+            "dire_picks": [
+                "sand_king",
+                "grimstroke",
+                "nyx_assassin",
+                "troll_warlord",
+                "vengefulspirit"
+            ],
+            "bans": [
+                "snapfire",
+                "beastmaster",
+                "abaddon",
+                "shadow_demon",
+                "tiny",
+                "leshrac",
+                "magnataur",
+                "night_stalker",
+                "lina",
+                "sniper",
+                "hoodwink",
+                "sven",
+                "slark",
+                "rubick"
+            ]
+        },
+        {
+            "match_id": "6202984551",
+            "winner": "dire",
+            "radiant_picks": [
+                "gyrocopter",
+                "slark",
+                "earthshaker",
+                "visage",
+                "magnataur"
+            ],
+            "dire_picks": [
+                "night_stalker",
+                "silencer",
+                "shadow_demon",
+                "tiny",
+                "necrolyte"
+            ],
+            "bans": [
+                "earth_spirit",
+                "spirit_breaker",
+                "lina",
+                "naga_siren",
+                "bloodseeker",
+                "templar_assassin",
+                "queenofpain",
+                "grimstroke",
+                "beastmaster",
+                "brewmaster",
+                "invoker",
+                "batrider",
+                "void_spirit",
+                "windrunner"
+            ]
+        },
+        {
+            "match_id": "6202975181",
+            "winner": "radiant",
+            "radiant_picks": [
+                "tiny",
+                "storm_spirit",
+                "lycan",
+                "abaddon",
+                "gyrocopter"
+            ],
+            "dire_picks": [
+                "batrider",
+                "undying",
+                "skywrath_mage",
+                "troll_warlord",
+                "earthshaker"
+            ],
+            "bans": [
+                "mars",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "morphling",
+                "lion",
+                "faceless_void",
+                "tidehunter",
+                "beastmaster",
+                "invoker",
+                "queenofpain",
+                "bane",
+                "venomancer",
+                "pangolier",
+                "medusa",
+                "weaver"
+            ]
+        },
+        {
+            "match_id": "6202971072",
+            "winner": "dire",
+            "radiant_picks": [
+                "tiny",
+                "hoodwink",
+                "earthshaker",
+                "windrunner",
+                "luna"
+            ],
+            "dire_picks": [
+                "weaver",
+                "disruptor",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "life_stealer",
+                "tinker"
+            ],
+            "bans": [
+                "pangolier",
+                "mars",
+                "sven",
+                "medusa",
+                "batrider",
+                "invoker",
+                "void_spirit",
+                "sand_king",
+                "beastmaster",
+                "bloodseeker",
+                "night_stalker",
+                "silencer",
+                "razor",
+                "morphling"
+            ]
+        },
+        {
+            "match_id": "6202913702",
+            "winner": "radiant",
+            "radiant_picks": [
+                "beastmaster",
+                "grimstroke",
+                "tiny",
+                "oracle",
+                "sand_king"
+            ],
+            "dire_picks": [
+                "abaddon",
+                "silencer",
+                "mars",
+                "rubick",
+                "life_stealer"
+            ],
+            "bans": [
+                "night_stalker",
+                "hoodwink",
+                "sniper",
+                "phantom_lancer",
+                "sven",
+                "medusa",
+                "slark",
+                "snapfire",
+                "lina",
+                "spectre",
+                "monkey_king",
+                "gyrocopter",
+                "windrunner",
+                "kunkka"
+            ]
+        },
+        {
+            "match_id": "6202890601",
+            "winner": "radiant",
+            "radiant_picks": [
+                "lina",
+                "medusa",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "venomancer",
+                "spirit_breaker"
+            ],
+            "dire_picks": [
+                "wisp",
+                "tiny",
+                "jakiro",
+                "lycan",
+                "invoker"
+            ],
+            "bans": [
+                "magnataur",
+                "warlock",
+                "nyx_assassin",
+                "antimage",
+                "shadow_demon",
+                "techies",
+                "weaver",
+                "night_stalker",
+                "beastmaster",
+                "undying",
+                "elder_titan",
+                "visage",
+                "treant",
+                "vengefulspirit"
+            ]
+        },
+        {
+            "match_id": "6202793471",
+            "winner": "radiant",
+            "radiant_picks": [
+                "tiny",
+                "medusa",
+                "undying",
+                "dark_willow",
+                "tidehunter"
+            ],
+            "dire_picks": [
+                "disruptor",
+                "beastmaster",
+                "rattletrap",
+                "phantom_lancer",
+                "razor"
+            ],
+            "bans": [
+                "weaver",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "slark",
+                "invoker",
+                "batrider",
+                "queenofpain",
+                "lina",
+                "troll_warlord",
+                "morphling",
+                "enchantress",
+                "chen",
+                "lycan",
+                "pangolier",
+                "sand_king"
+            ]
+        },
+        {
+            "match_id": "6202793237",
+            "winner": "radiant",
+            "radiant_picks": [
+                "snapfire",
+                "visage",
+                "tusk",
+                "tiny",
+                "oracle"
+            ],
+            "dire_picks": [
+                "nyx_assassin",
+                "ancient_apparition",
+                "dark_seer",
+                "sven",
+                "batrider"
+            ],
+            "bans": [
+                "magnataur",
+                "keeper_of_the_light",
+                "morphling",
+                "antimage",
+                "puck",
+                "void_spirit",
+                "templar_assassin",
+                "sand_king",
+                "night_stalker",
+                "medusa",
+                "lina",
+                "undying",
+                "grimstroke",
+                "jakiro"
+            ]
+        },
+        {
+            "match_id": "6202790943",
+            "winner": "radiant",
+            "radiant_picks": [
+                "grimstroke",
+                "abaddon",
+                "beastmaster",
+                "morphling",
+                "puck"
+            ],
+            "dire_picks": [
+                "jakiro",
+                "brewmaster",
+                "hoodwink",
+                "phantom_lancer",
+                "windrunner"
+            ],
+            "bans": [
+                "tinker",
+                "silencer",
+                "faceless_void",
+                "monkey_king",
+                "antimage",
+                "invoker",
+                "sniper",
+                "lina",
+                "snapfire",
+                "gyrocopter",
+                "juggernaut",
+                "legion_commander",
+                "batrider",
+                "ember_spirit"
+            ]
+        },
+        {
+            "match_id": "6202728873",
+            "winner": "dire",
+            "radiant_picks": [
+                "jakiro",
+                "night_stalker",
+                "warlock",
+                "faceless_void",
+                "sniper"
+            ],
+            "dire_picks": [
+                "lina",
+                "snapfire",
+                "grimstroke",
+                "legion_commander",
+                "spectre"
+            ],
+            "bans": [
+                "beastmaster",
+                "nyx_assassin",
+                "slark",
+                "bloodseeker",
+                "life_stealer",
+                "gyrocopter",
+                "phantom_lancer",
+                "silencer",
+                "tinker",
+                "juggernaut",
+                "monkey_king",
+                "antimage",
+                "queenofpain",
+                "visage"
+            ]
+        },
+        {
+            "match_id": "6202723154",
+            "winner": "radiant",
+            "radiant_picks": [
+                "hoodwink",
+                "warlock",
+                "legion_commander",
+                "monkey_king",
+                "antimage"
+            ],
+            "dire_picks": [
+                "sand_king",
+                "lina",
+                "undying",
+                "medusa",
+                "puck"
+            ],
+            "bans": [
+                "snapfire",
+                "night_stalker",
+                "beastmaster",
+                "visage",
+                "mars",
+                "slardar",
+                "pangolier",
+                "magnataur",
+                "keeper_of_the_light",
+                "gyrocopter",
+                "techies",
+                "sven",
+                "batrider",
+                "templar_assassin"
+            ]
+        },
+        {
+            "match_id": "6202716602",
+            "winner": "dire",
+            "radiant_picks": [
+                "disruptor",
+                "storm_spirit",
+                "hoodwink",
+                "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+                "phantom_assassin"
+            ],
+            "dire_picks": [
+                "shadow_demon",
+                "beastmaster",
+                "skywrath_mage",
+                "morphling",
+                "batrider"
+            ],
+            "bans": [
+                "mars",
+                "tiny",
+                "lina",
+                "ember_spirit",
+                "troll_warlord",
+                "nevermore",
+                "void_spirit",
+                "invoker",
+                "weaver",
+                "tidehunter",
+                "gyrocopter",
+                "medusa",
+                "phantom_lancer",
+                "antimage"
+            ]
         }
     ]
 }

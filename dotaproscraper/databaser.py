@@ -1,6 +1,5 @@
 import json
 import pandas as pd
-from pandas.core.tools import numeric
 from sqlalchemy import create_engine
 
 class Databaser:
