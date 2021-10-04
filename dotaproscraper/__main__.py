@@ -1,3 +1,7 @@
+"""
+This module contains a scraper and database creator, which finds a number of Dota 2 Professional Match IDs, and extracts key information, outputs it to file and then
+transforms the data into a readable, analysable format.
+"""
 from .dotascraper import DotaScraper
 from .databaser import Databaser
 

@@ -1,8 +1,22 @@
+"""
+This module is a webscraper which runs on the OpenDota stats website. It has 2 main functions
+    1. get the 100 most recent match IDs and output to file
+    2. use the stored match IDs get the detailed match info and output to file
+"""
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 import json
 
 class DotaScraper:
+    """
+    This class is used for scraping data from the base URL.
+
+    Attributes:
+        driver (webdriver): The webdriver which will pilot Chrome (chromedriver file included in directory and must match user's Chrome app version)
+        matches (list): a list of match dictionary items that will be dumped to json
+        match_ids (list): a list of match id numbers that will be dumped to json
+        outfile (str): the file name to output matches list to
+    """
     BASE_URL = "https://www.opendota.com/matches/"
     def __init__(self, outfile: str='dotaproscraper/dotadata.json'):
         self.driver = webdriver.Chrome('dotaproscraper/chromedriver')
@@ -11,9 +25,15 @@ class DotaScraper:
         self.outfile = outfile
         
     def quitout(self):
+        """
+        Terminates the webdriver.
+        """
         self.driver.quit()
 
     def get_match_ids(self):
+        """
+        Gets the match IDs from the most recent 100 professional games and outputs them to the match ID file.
+        """
         self.driver.get(self.BASE_URL)
         matches_container = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/div/div/div/div/div/table/tbody'))
         matches_full = matches_container.find_elements_by_xpath('./tr')
@@ -25,6 +45,9 @@ class DotaScraper:
         
 
     def get_matches(self):
+        """
+        Reads the match ID file and gets the info for a batch of 100 matches.
+        """
         self.read_match_ids()
         self.counter = 0
         self.read_json()
@@ -41,11 +64,27 @@ class DotaScraper:
             self.create_json()
 
     def parsed_ids_list(self) -> list:
+        """
+        Checks the currently parsed matches against the ids to be scraped.
+
+        Returns:
+            x (list): the list of match IDs that have already been scraped and outputed
+        """
         x = []
         [x.append(match["match_id"]) for match in self.matches if match["match_id"] in self.match_ids]
         return x
 
     def _check_if_not_parsed(self, match: str, parsed_ids: list) -> bool:
+        """
+        Checks if individual match has been parsed
+
+        Arguments:
+            match (str): Match ID to potentially scrape from
+            parsed_ids (list): list of parsed IDs to reference
+
+        Returns:
+            bool : False if in the list, will not parse already parsed data
+        """
         if match in parsed_ids:
             return False
         else:
@@ -53,6 +92,12 @@ class DotaScraper:
 
 
     def get_match(self, match_id: str):
+        """
+        Scrapes OpenDota for specified match ID, saves data to dictionary and appends dictionary to matches list
+
+        Arguments:
+            match (str): Match ID to scrape data from
+        """
         self.driver.get(self.BASE_URL+match_id)
         header = WebDriverWait(self.driver, 10).until(lambda x: x.find_element_by_xpath('//*[@id="root"]/div/div[3]/div/header/div[1]'))
         header_list = header.text.split('\n')
@@ -88,6 +133,18 @@ class DotaScraper:
     
     @staticmethod
     def _picks_and_bans(picks: list, bans: list, pickbans: list) -> list:
+        """
+        A static method which sorts picks from bans based on text data.
+
+        Arguments:
+            picks (list): empty list 
+            bans (list): empty list or list with 5 hero bans
+            pickbans (list): a list of 5 picks and 5 bans
+
+        Returns:
+            picks (list): list of 5 hero picks
+            bans (list): list of 5 or 10 hero bans
+        """
         for pickban in pickbans:
                 pickorban = pickban.find_element_by_xpath('./img').get_attribute('src').replace('https://steamcdn-a.akamaihd.net/apps/dota2/images/heroes/', '').replace('_sb.png', '')
                 if "BAN" in pickban.text:

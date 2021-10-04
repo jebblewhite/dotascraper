@@ -1,3 +1,8 @@
+"""
+This module is a DataFrame and Database generator which takes the detailed match info from file and transforms it into a more readable format. It then analyses and outputs the
+data as a new table.
+"""
+
 import json
 import pandas as pd
 from sqlalchemy import create_engine
