@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # credentials file
-dotaproscraper/db_credentials.json
+#dotaproscraper/db_credentials.json
