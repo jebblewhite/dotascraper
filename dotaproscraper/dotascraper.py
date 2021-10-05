@@ -5,6 +5,7 @@ This module is a webscraper which runs on the OpenDota stats website. It has 2 m
 """
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.chrome.options import Options
 import json
 
 class DotaScraper:
@@ -19,7 +20,10 @@ class DotaScraper:
     """
     BASE_URL = "https://www.opendota.com/matches/"
     def __init__(self, outfile: str='dotaproscraper/dotadata.json'):
-        self.driver = webdriver.Chrome()
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument('--no-sandbox')
+        self.driver = webdriver.Chrome(options=chrome_options)
         self.matches = []
         self.match_ids = []
         self.outfile = outfile
