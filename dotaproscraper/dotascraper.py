@@ -19,7 +19,7 @@ class DotaScraper:
     """
     BASE_URL = "https://www.opendota.com/matches/"
     def __init__(self, outfile: str='dotaproscraper/dotadata.json'):
-        self.driver = webdriver.Chrome('dotaproscraper/chromedriver')
+        self.driver = webdriver.Chrome()
         self.matches = []
         self.match_ids = []
         self.outfile = outfile
